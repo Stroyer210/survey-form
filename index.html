@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <mega charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <fieldset class="header">
+    <h1 id="title">Survey Form</h1>
+    <p class="description" id="description">Thank you for taking your time to fill out this form to help our website.</p>
+    </fieldset>
+    <form method="post" id="survey-form">
+      <fieldset class="main">
+        <label id="name-label">Name: <input id="name" type="name" placeholder="Enter your name" required></label>
+        <label id="email-label">Email: <input id="email" type="email" placeholder="Enter your email" required></label>
+        <label id="number-label">Age: <input id="number" type="number" min="13" max="120" placeholder="Age"></label>
+        <label>Which location did you go to:
+        <select class="drop" id="dropdown">
+          <option value="">Select an option</option>
+          <option value="1">Hilldale</option>
+          <option value="2">Downtown</option>
+          <option value="3">East side</option>
+        </label>
+        <label class="what">What did you get:</label>
+      <label for="animals"><input id="dog" type="radio" name="animals" value="dogs">Drinks</label>
+      <label for="animals" ><input id="cat" type="radio" name="animals" value="cats">Meal</label>
+      <label>Select some of the best reasons you like it: </label>
+      <label><input type="checkbox" value="friendly">Tasty</label>
+      <label><input type="checkbox" value="lovely">Refreshing</label>
+      <label><input type="checkbox" value="playful">Delicous</label>
+      <label><input type="checkbox" value="loyal">Creamy</label>
+      <label><input type="checkbox" value="happiness">Crispy</label>
+      <label>Give us your thoughts:<textarea rows="3" cols="30"placeholder="My family and I were at this restaurant on the 21st of this month..."></textarea></label>
+<input id="submit" type="submit" value="Submit">
+      </fieldset>
+    </form>
+  </body>
+</html>
